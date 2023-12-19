@@ -8,5 +8,14 @@ export default defineAppConfig({
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
-  }
+  },
+  subpackages: [
+    {
+      root: 'doctor-packages',
+      name: 'doctor',
+      pages: [
+        "PatientSignUp/index"
+      ]
+    }
+  ]
 })
